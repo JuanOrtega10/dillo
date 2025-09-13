@@ -50,50 +50,50 @@ Dillo is an intelligent English learning app designed to help students improve t
 ### Installation
 
 1. **Clone the repository**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/JuanOrtega10/dillo.git
    cd dillo
-   \`\`\`
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Set up environment variables**
-   \`\`\`bash
+   ```bash
    cp .env.example .env.local
-   \`\`\`
+   ```
    
    Fill in your API keys in `.env.local` (see Environment Variables section below)
 
 4. **Run the development server**
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
 5. **Open the app**
    Navigate to [http://localhost:3000](http://localhost:3000) in your browser
 
 ### Build for Production
 
-\`\`\`bash
+```bash
 npm run build
 npm start
-\`\`\`
+```
 
 ## Environment Variables
 
 Create a `.env.local` file in the root directory with the following variables:
 
-\`\`\`env
+```env
 # OpenAI API Configuration
 OPENAI_API_KEY=your_openai_api_key_here
 
 # Language Confidence API Configuration  
 LC_API_KEY=your_language_confidence_api_key_here
 LANGUAGE_CONFIDENCE_API_KEY=your_language_confidence_api_key_here
-\`\`\`
+```
 
 ### Getting API Keys
 
@@ -134,7 +134,7 @@ LANGUAGE_CONFIDENCE_API_KEY=your_language_confidence_api_key_here
 
 The app expects transcripts in this format:
 
-\`\`\`
+```
 Private Class: Juan Ortega - Transcript
 00:00:00
 
@@ -149,7 +149,7 @@ Simon Sanchez: Try to choose classes that are one-on-one; it's easier to parse.
 Juan Alberto Ortega Riveros: Mhm.
 Simon Sanchez: You've seen the format, right?
 Juan Alberto Ortega Riveros: Yeah. I saw it yesterday.
-\`\`\`
+```
 
 ## Technology Stack
 
